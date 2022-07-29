@@ -12,8 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { email_access_key} from "../js/secrets";
-
 var COMMANDS = COMMANDS || {};
 
 let sudo_ran = false;
