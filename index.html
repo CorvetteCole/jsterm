@@ -26,10 +26,8 @@
     function redirect() {
         console.log('current size: ' + screen.width);
         if (screen.width <= 950) {
-            // prompt user if they want to go to mobile version
-            if (confirm('Would you like to go to the mobile version of this website?')) {
-                window.location.href = 'simple_home.html';
-            }
+            // take users to mobile version 
+            window.location.href = 'simple_home.html';
         }
     }
 </script>
