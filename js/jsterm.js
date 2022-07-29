@@ -510,7 +510,7 @@
             .enqueue('cd projects')
             .enqueue('ls -l')
             .enqueue('cd ..')
-            .enqueue('tree')
+            .enqueue('ls -l')
             .begin();
     });
 
