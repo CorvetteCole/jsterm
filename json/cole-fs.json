@@ -111,6 +111,11 @@
           "contents": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         }
       ]
+    },
+    {
+      "type": "exec",
+      "name": "simple_website",
+      "contents": "simple_home.html"
     }
   ]
 }

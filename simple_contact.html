@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Get in contact with Cole Gerdemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+    <meta name="CorvetteCole.com" content="&nbsp;"/>
+
+
+    <link rel="stylesheet" href="css/mobile_style.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91837673-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-91837673-2');
+    </script>
+</head>
+
+<body>
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-amber.min.css" />
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall site-header is-casting-shadow">
+            <div class="mdl-layout__header-row site-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="site-logo"></div>
+                <span class="mdl-layout__title">Cole Gerdemann</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row site-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link" href="simple_home.html">About</a>
+                    <a class="mdl-navigation__link is-active" href="simple_contact.html">Contact</a>
+					<a class="mdl-navigation__link" href="https://drive.google.com/file/d/1U5y-RG6HvrFZtpJ6OHyAXZe07egGs7Lz/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+					<a class="mdl-navigation__link" href="https://github.com/CorvetteCole/" target="_blank" rel="noreferrer" >GitHub</a>
+                    <a class="mdl-navigation__link" href="index.html">Interactive</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link" href="simple_home.html">About</a>
+                <a class="mdl-navigation__link is-active" href="simple_contact.html">Contact</a>
+				<a class="mdl-navigation__link" href="https://drive.google.com/file/d/1U5y-RG6HvrFZtpJ6OHyAXZe07egGs7Lz/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+				<a class="mdl-navigation__link" href="https://github.com/CorvetteCole/" target="_blank" rel="noreferrer" >GitHub</a>
+                <a class="mdl-navigation__link" href="index.html">Interactive</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid site-max-width site-contact">
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                    <div style="text-align: center;">
+                        <p>
+                            If you'd like to get in touch with me for any reason, feel free to fill out the form below.
+                        </p>
+					</div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="">
+                            <input type="hidden" name="access_key" value="bdba4a21-2a56-460b-b3d7-ea1e98245557">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name" name="name">
+                                <label class="mdl-textfield__label" for="Name">Name...</label>
+                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="Email" name="email">
+                                <label class="mdl-textfield__label" for="Email">Email...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note" name="message"></textarea>
+                                <label class="mdl-textfield__label" for="note">Enter message</label>
+                            </div>
+                            <p>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                                    Submit
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</body>
+
+</html>

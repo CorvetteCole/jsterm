@@ -175,7 +175,7 @@ COMMANDS.login = function (argv, cb) {
 COMMANDS.contact = function (argv, cb) {
     let contactData = {
         subject: "New Submission from corvettecole.com",
-        access_key: email_access_key,
+        access_key: 'bdba4a21-2a56-460b-b3d7-ea1e98245557',
         email: '',
         name: '',
         message: ''
@@ -281,7 +281,8 @@ COMMANDS.help = function (argv, cb) {
         'of that directory. The contents of a <span class="text">file</span> ' +
         'can be viewed using "cat". <span class="img">Images</span> are ' +
         'displayed using "gimp".<br><br>If there is a command you want to get ' +
-        'out of, press Ctrl+C or Ctrl+D.<br><br>');
+        'out of, press Ctrl+C or Ctrl+D.<br><br>Click \'simple_website\' to ' +
+        'view a simplified version of this site<br><br>');
     this._terminal.write('Commands are:<br>');
     for (const c in this._terminal.commands) {
         if (this._terminal.commands.hasOwnProperty(c) && !c.startswith('_'))
