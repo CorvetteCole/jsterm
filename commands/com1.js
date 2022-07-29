@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import { email_access_key} from "../js/secrets";
+
 var COMMANDS = COMMANDS || {};
 
 let sudo_ran = false;
@@ -158,7 +160,6 @@ COMMANDS.sudo = function (argv, cb) {
 COMMANDS.login = function (argv, cb) {
     this._terminal.returnHandler = function () {
         const username = this.stdout().innerHTML;
-
         this.scroll();
         if (username)
             this.config.username = username;
@@ -169,6 +170,77 @@ COMMANDS.login = function (argv, cb) {
         }
     }.bind(this._terminal);
     this._terminal.write('Username: ');
+    this._terminal.newStdout();
+    this._terminal.scroll();
+}
+
+COMMANDS.contact = function (argv, cb) {
+    let contactData = {
+        subject: "New Submission from corvettecole.com",
+        access_key: email_access_key,
+        email: '',
+        name: '',
+        message: ''
+    };
+
+    this._terminal.returnHandler = function () {
+        if (!contactData.email) {
+            contactData.email = this.stdout().innerHTML;
+        } else if (!contactData.name) {
+            contactData.name = this.stdout().innerHTML;
+        } else if (!contactData.message) {
+            contactData.message = this.stdout().innerHTML;
+        }
+        this.scroll();
+
+        // do the same thing over, but now we are printing
+        if (!contactData.email) {
+            this.write('<br>Enter your email: ');
+        } else if (!contactData.name) {
+            this.write('<br>Enter your name: ');
+        } else if (!contactData.message) {
+            this.write('<br>Enter your message: ');
+        }
+        this.newStdout();
+        this.scroll();
+
+        if (contactData.email && contactData.name && contactData.message) {
+            // send the email
+            console.log(contactData);
+
+            this.write('<br>Sending...');
+            this.scroll();
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(contactData)
+            })
+                .then((response) => {
+                    if (response.status === 200) {
+                        this.write('<br>Thank you for reaching out. I will get back to you as soon as possible.');
+                    } else {
+                        console.log(response);
+                        this.write('<br>Error sending message. Maybe you should try emailing me directly at <a class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</a>');
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    this.write('<br>Error sending message. Maybe you should try emailing me directly at <a class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</a>');
+                })
+                .then(function () {
+                    cb();
+                });
+        }
+
+
+    }.bind(this._terminal);
+
+
+    this._terminal.write('Enter your email: ');
     this._terminal.newStdout();
     this._terminal.scroll();
 }
@@ -193,6 +265,7 @@ COMMANDS.tree = function (argv, cb) {
                 writeTree(entry, level + 1);
         });
     }
+
     home = this._terminal.getEntry('~');
     this._terminal.writeLink(home, '~');
     this._terminal.write('<br>');

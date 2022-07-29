@@ -19,7 +19,7 @@ CONFIG.prompt = function (cwd, user) {
         return '<span class="user">' + user +
             '</span>@<span class="host">corvettecole.com</span>:<span class="cwd">' +
             cwd + '</span>$ ';
-    return 'jsterm1.0 $ ';
+    return 'ColeOS $ ';
 };
 
 CONFIG.username = '';

@@ -1,0 +1,116 @@
+{
+  "type": "dir",
+  "name": "~",
+  "contents": [
+    {
+      "type": "text",
+      "name": "README",
+      "contents": "Hi! My name is Cole Gerdemann. I'm a Computer Engineering student with a passion for open-source projects, Linux, space systems, robotics, networking, and computer vision. I love taking the initiative and coming up with my own ideas and projects on the job, and want to work with you!\n\nI love challenges and am an extremely fast learner. Take a look at my resume and feel free to reach out with any questions, I am always happy to talk!\n\nYou can contact me by typing 'contact' in this prompt.\n"
+    },
+    {
+      "type": "exec",
+      "name": "resume",
+      "contents": "https://drive.google.com/file/d/1U5y-RG6HvrFZtpJ6OHyAXZe07egGs7Lz/view"
+    },
+    {
+      "type": "dir",
+      "name": "projects",
+      "contents": [
+        {
+          "type": "exec",
+          "name": "GitHub",
+          "contents": "https://github.com/CorvetteCole/",
+          "description": "I love open-source projects... Find out what I'm working on here."
+        },
+        {
+          "type": "exec",
+          "name": "blur-my-shell",
+          "contents": "https://github.com/aunetx/blur-my-shell",
+          "description": "A Gnome extension implementing blur effects on the desktop."
+        },
+        {
+          "type": "exec",
+          "name": "CanvasTasks",
+          "contents": "https://github.com/CorvetteCole/CanvasTasks",
+          "description": "Automatically pull assignments from Canvas into Google Tasks."
+        },
+        {
+          "type": "exec",
+          "name": "PixelWatchFace",
+          "contents": "https://github.com/CorvetteCole/PixelWatchFace",
+          "description": "Minimalistic and open-source watchface for WearOS. 80,000+ downloads."
+        },
+        {
+          "type": "exec",
+          "name": "GotoSleep",
+          "contents": "https://github.com/CorvetteCole/GotoSleep",
+          "description": "Reminds you to sleep. aggressively. forever. until you do. 100,000+ downloads."
+        },
+        {
+          "type": "exec",
+          "name": "FRC-TensorFlow-Vision",
+          "contents": "https://github.com/kyeot/2018-Season-Code/tree/master/vision_app/android",
+          "description": "A first-for-FIRST TensorFlow-based vision system for 2018 FRC game."
+        },
+        {
+          "type": "exec",
+          "name": "NOHS-Edge-Client",
+          "contents": "https://github.com/CorvetteCole/NOHS-Edge-Client",
+          "description": "Alternative app to my high school's one, but better. My first app ever."
+        },
+        {
+          "type": "exec",
+          "name": "basketballvision",
+          "contents": "https://github.com/CorvetteCole/basketballvision",
+          "description": "HS Project allowing blind people to play basketball using LASERS."
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "images",
+      "contents": [
+        {
+          "type": "img",
+          "name": "cool-space-thing.gif",
+          "contents": "/images/cool-space-thing.gif",
+          "caption": "I wrote the software for this! Ask me about it."
+        },
+        {
+          "type": "img",
+          "name": "me_irl.jpg",
+          "contents": "/images/me_irl.jpg",
+          "caption": "(A bit old)"
+        },
+        {
+          "type": "img",
+          "name": "neat-waterfall.jpg",
+          "contents": "/images/neat-waterfall.jpg",
+          "caption": "Picture of me. Waterfall for scale."
+        },
+        {
+          "type": "img",
+          "name": "my-os-btw.png",
+          "contents": "/images/my-os-btw.png",
+          "caption": "I use Arch btw."
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "misc",
+      "contents": [
+        {
+          "type": "exec",
+          "name": "huge_alligator",
+          "contents": "https://hugealligator.com"
+        },
+        {
+          "type": "exec",
+          "name": "my_good_friend_rick",
+          "contents": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        }
+      ]
+    }
+  ]
+}
