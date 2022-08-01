@@ -513,6 +513,7 @@
     });
 
     window.typeCommand = function (command) {
+        term.scroll();
         term.typeCommand(command);
     };
 })();
