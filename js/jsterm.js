@@ -505,12 +505,10 @@
         term.enqueue('login')
             .enqueue('coleg')
             .enqueue('******')
-            .enqueue('cat README')
             .enqueue('help')
-            .enqueue('cd projects')
+            .enqueue('cat README')
+            .enqueue('ls -l projects/')
             .enqueue('ls -l')
-            .enqueue('cd ..')
-            .enqueue('tree')
             .begin();
     });
 

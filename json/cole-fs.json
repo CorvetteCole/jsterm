@@ -115,7 +115,8 @@
     {
       "type": "exec",
       "name": "simple_website",
-      "contents": "simple_home.html"
+      "contents": "simple_home.html",
+      "description": "Click me to switch to a mobile-friendly simplified website"
     }
   ]
 }
