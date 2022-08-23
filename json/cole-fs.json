@@ -13,6 +13,11 @@
       "contents": "https://drive.google.com/file/d/1U5y-RG6HvrFZtpJ6OHyAXZe07egGs7Lz/view"
     },
     {
+      "type": "exec",
+      "name": "LinkedIn",
+      "contents": "https://linkedin.com/in/corvettecole"
+    },
+    {
       "type": "dir",
       "name": "projects",
       "contents": [
@@ -21,6 +26,12 @@
           "name": "GitHub",
           "contents": "https://github.com/CorvetteCole/",
           "description": "I love open-source projects... Find out what I'm working on here."
+        },
+        {
+          "type": "exec",
+          "name": "ColeCAN",
+          "contents": "https://github.com/KentuckySolarCar/cole-can",
+          "description": "New dashboard and CAN interface for the next gen KY solar car. WIP."
         },
         {
           "type": "exec",
