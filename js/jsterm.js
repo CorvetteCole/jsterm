@@ -186,7 +186,7 @@
                     that._typeKey(command.charCodeAt(i));
                     setTimeout(function () {
                         type(i + 1);
-                    }, 100);
+                    }, 60);
                 }
             })(0);
         },
