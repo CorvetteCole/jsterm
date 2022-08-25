@@ -29,9 +29,9 @@
         },
         {
           "type": "exec",
-          "name": "ColeCAN",
-          "contents": "https://github.com/KentuckySolarCar/cole-can",
-          "description": "New dashboard and CAN interface for the next gen KY solar car. WIP."
+          "name": "project-cole",
+          "contents": "https://github.com/KentuckySolarCar/project-cole",
+          "description": "Next gen dashboard + CAN interface for the new KY solar car. WIP."
         },
         {
           "type": "exec",
