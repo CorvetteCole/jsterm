@@ -222,12 +222,12 @@ COMMANDS.contact = function (argv, cb) {
                         this.write('<br>Thank you for reaching out. I will get back to you as soon as possible.');
                     } else {
                         console.log(response);
-                        this.write('<br>Error sending message. Maybe you should try emailing me directly at <a class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</a>');
+                        this.write('<br>Error sending message. You can reach me directly at <span class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</span>');
                     }
                 })
                 .catch(error => {
                     console.log(error);
-                    this.write('<br>Error sending message. Maybe you should try emailing me directly at <a class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</a>');
+                    this.write('<br>Error sending message. You can reach me directly at <span class="exec" href="mailto:corvettecole@gmail.com>corvettecole@gmail.com</span>');
                 })
                 .then(function () {
                     cb();
