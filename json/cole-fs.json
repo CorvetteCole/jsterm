@@ -125,6 +125,12 @@
     },
     {
       "type": "exec",
+      "name": "artifical_retinas_in_orbit",
+      "contents": "https://www.freethink.com/space/artificial-retinas",
+      "description": "I wrote the software to automate this process"
+    },
+    {
+      "type": "exec",
       "name": "simple_website",
       "contents": "simple_home.html",
       "description": "Click me to switch to a mobile-friendly simplified website"
