@@ -29,6 +29,18 @@
         },
         {
           "type": "exec",
+          "name": "artifical_retinas_in_orbit",
+          "contents": "https://www.freethink.com/space/artificial-retinas",
+          "description": "I wrote the software to automate this process"
+        },
+        {
+          "type": "exec",
+          "name": "dancing_cubelabs",
+          "contents": "https://spacetango.com/latest/university-of-kentucky-satellite-demo/",
+          "description": "I led the software development for this project"
+        },
+        {
+          "type": "exec",
           "name": "project-cole",
           "contents": "https://github.com/KentuckySolarCar/project-cole",
           "description": "Next gen dashboard + CAN interface for the new KY solar car. WIP."
@@ -122,12 +134,6 @@
           "contents": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         }
       ]
-    },
-    {
-      "type": "exec",
-      "name": "artifical_retinas_in_orbit",
-      "contents": "https://www.freethink.com/space/artificial-retinas",
-      "description": "I wrote the software to automate this process"
     },
     {
       "type": "exec",
