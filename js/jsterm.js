@@ -503,7 +503,7 @@
     const term = Object.create(Terminal);
     term.init(CONFIG, '/json/cole-fs.json', COMMANDS, function () {
         term.enqueue('login')
-            .enqueue('coleg')
+            .enqueue('cole')
             .enqueue('******')
             .enqueue('help')
             .enqueue('cat README')

@@ -17,7 +17,7 @@ var CONFIG = CONFIG || {};
 CONFIG.prompt = function (cwd, user) {
     if (user)
         return '<span class="user">' + user +
-            '</span>@<span class="host">corvettecole.com</span>:<span class="cwd">' +
+            '</span>@<span class="host">gerdemann.us</span>:<span class="cwd">' +
             cwd + '</span>$ ';
     return 'ColeOS $ ';
 };
