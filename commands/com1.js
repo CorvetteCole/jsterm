@@ -174,7 +174,7 @@ COMMANDS.login = function (argv, cb) {
 
 COMMANDS.contact = function (argv, cb) {
     let contactData = {
-        subject: "New Submission from corvettecole.com",
+        subject: "New Submission from coleg.dev",
         access_key: 'bdba4a21-2a56-460b-b3d7-ea1e98245557',
         email: '',
         name: '',
