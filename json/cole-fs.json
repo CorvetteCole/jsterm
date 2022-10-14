@@ -5,7 +5,7 @@
     {
       "type": "text",
       "name": "README",
-      "contents": "Hi! My name is Cole Gerdemann. I'm a Computer Engineering student with a passion for open-source projects, Linux, space systems, robotics, networking, and computer vision. I love taking the initiative and coming up with my own ideas and projects on the job, and want to work with you!\n\nI love challenges and am an extremely fast learner. Take a look at my resume and feel free to reach out with any questions, I am always happy to talk!\n\nYou can contact me by typing 'contact' in this prompt.\n"
+      "contents": "Hi! My name is Cole Gerdemann. I'm a Computer Engineering student with a passion for open-source projects, Linux, space systems, robotics, networking, and computer vision. I love taking the initiative and coming up with my own ideas and projects on the job, and want to work with you!\n\nI love challenges and am an extremely fast learner. Take a look at my resume and feel free to reach out with any questions, I am always happy to talk!\n\n<b>You can contact me by typing 'contact' in this prompt.</b>\n"
     },
     {
       "type": "exec",
